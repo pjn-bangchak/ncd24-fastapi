@@ -48,7 +48,7 @@ jobs:
             type=ref,event=branch
             # tag edge on default branch
             type=edge
-            # dynamically set the branch name as a prefix
+            # dynamically set the branch name as a pref
             type=sha,prefix=${{ env.DEPLOY_ENV }}-,priority=750
     # For use in other jobs
     # Need to put a lot of variables here because reusable workflow context not support env.*
